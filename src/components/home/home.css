@@ -1,0 +1,57 @@
+.link {
+    text-decoration: none;
+}
+
+.grid_buttons {
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.grid_buttons Link {
+    text-decoration: none;
+}
+
+.addusers_form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.add_button {
+    display: flex;
+    align-items: center;
+    gap: 12px
+}
+
+.setrelation_box, .finddegree_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+ 
+.user_select {
+    min-width: 200px;
+}
+
+.relation_button {
+    text-align: center;
+}
+
+.finddegree_result {
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.finddegree_result .error {
+    color: red;
+}
+
+.users_list > p {
+    margin: 0;
+}
