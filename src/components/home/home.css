@@ -52,6 +52,21 @@
     color: red;
 }
 
-.users_list > p {
-    margin: 0;
+.users_list > div {
+    margin-bottom: 1em;
+}
+
+.users_list strong {
+    color: darkgoldenrod
+}
+
+#userinfo_title {
+    font-weight: bold;
+    color: darkred;
+    margin-top: 2rem;
+}
+
+#username {
+    color: darkgreen;
+    font-size: 1.5 rem;
 }

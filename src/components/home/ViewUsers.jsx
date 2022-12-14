@@ -8,13 +8,13 @@ const ViewUsers = ({users, userNames}) => {
 
   return (
     <Box className='viewusers_box'>
-        <Typography variant='h5'>Users Information:</Typography>
+        <Typography id='userinfo_title' variant='h5'>Users Information:</Typography>
         <List className='users_list'>
             {userNames.map(
-              userName => <p key={userName} >
-                            <Typography variant='h6'>Name: <strong>{userName}</strong></Typography>
+              userName => <div key={userName} >
+                            <Typography variant='h6'>Name: <strong id='username'>{userName}</strong></Typography>
                             Friends of {userName +': '}<strong>{users[userName].friends.join(', ')}</strong>
-                          </p>
+                          </div>
             )}
         </List>
     </Box>

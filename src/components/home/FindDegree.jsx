@@ -19,7 +19,7 @@ const FindDegree = ({users, userNames}) => {
     else
         setErrorMessage('')
 
-    const degreeArr = findDegree(sourceUser, visited)
+    const degreeArr = findDegree(sourceUser, visited) || []
     const lines = []
 
     for(let eachDegree of degreeArr)
@@ -27,7 +27,7 @@ const FindDegree = ({users, userNames}) => {
         lines.push(sourceUser+' > '+eachDegree.join(' > '))
     }
 
-    setDegreeResult(lines)
+    setDegreeResult(lines.length ? lines : ['No connection'])
   }
 
   const findDegree = (sourceUser, visited=[]) => {
@@ -83,7 +83,7 @@ const FindDegree = ({users, userNames}) => {
         </Box>
         {degreeResult &&
             <Box className='finddegree_result'>
-                {degreeResult.map(item => <p>{item}</p>)}
+                {degreeResult.map(item => <p key={item}>{item}</p>)}
                 {errorMessage && <p className='error'>{errorMessage}</p>}
             </Box>
         }
